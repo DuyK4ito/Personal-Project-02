@@ -5,6 +5,7 @@
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -311,6 +312,15 @@ body {
 .content-block .content-stats {
     display: flex;
     margin-top: 8px;
+}
+
+.content-stats .stats-desc {
+    color: #5f5b53;
+    font-family: var(--common-font);
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
 }
 
 .content-stats .stats-desc + .stats-desc {
@@ -789,4 +799,125 @@ body {
 
 .nav-dot .dot + .dot {
     margin-left: 6px;
+}
+
+/* ============== Footer ============== */
+.footer {
+    padding: 96px 135px 28px;
+    background: #2e2100;
+}
+
+.footer .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer .row .column {
+    width: 22%;
+}
+
+.footer .row .column:first-child {
+    width: 35%;
+}
+
+.footer .row .desc {
+    margin-top: 18px;
+    max-width: 267px;
+    color: #bfbcb2;
+    font-family: var(--common-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .row .social-list {
+    margin-top: 18px;
+}
+
+.footer .social-list .social-icon + .social-icon {
+    margin-left: 18px;
+}
+
+.footer .social-list .social-icon:hover {
+    opacity: 0.8;
+}
+
+.footer .column .heading.lv3 {
+    position: relative;
+    margin-bottom: 43px;
+    color: #fff;
+    font-family: var(--common-font);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer .column .heading.lv3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -14px;
+    width: 130px;
+    height: 1px;
+    background: #59554b;
+}
+
+.footer .column ul li {
+    margin-top: 12px;
+}
+
+.footer .column a {
+    color: #bfbcb2;
+    font-family: var(--common-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .column a:hover {
+    color: #d1d0d0;
+    text-decoration: underline;
+}
+
+.footer .column:nth-child(4) {
+    max-width: 234px;
+    align-self: flex-start;
+}
+
+.footer .column:nth-child(4) .info + .info {
+    margin-top: 12px;
+}
+
+.footer .column:nth-child(4) .info {
+    color: #bfbcb2;
+    font-family: var(--common-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.footer .column:nth-child(4) strong {
+    color: #fff;
+}
+
+.footer .copyright {
+    position: relative;
+    margin-top: 67px;
+    color: #807d74;
+    text-align: center;
+    font-family: var(--common-font);
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.86;
+}
+
+.footer .copyright::after {
+    content: "";
+    width: 1170px;
+    height: 1px;
+    background: #59554b;
+    position: absolute;
+    left: 0;
+    top: -28px;
 }
